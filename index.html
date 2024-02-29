@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" >
 
 <head>
     <meta charset="UTF-8">
@@ -12,19 +12,22 @@
 <body>
     <h2 class="text-6xl">Hunting Phone</h2>
     <main class="container mx-auto">
+        <!-- Search result -->
+        <div class="bg-slate-50 text-center my-5">
+            <input id="search-box" type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+            <button class="btn btn-accent" onclick="handleSearch()">Search</button>
+        </div>
+        <!-- Loading spninner -->
+        <div class=" text-center my-5">
+            <div class=" text-center my-5">
+                <span class="loading loading-spinner text-primary"></span>
+        </div>
         <section>
             <div id="phone-container" class="gap-x-10 gap-y-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                <!-- <div class="card w-96 bg-gray-100 shadow-xl"> -->
-                    <!-- <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                            alt="Shoes" /></figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div> -->
-                <!-- </div> -->
+            </div>
+            <!-- Show all button -->
+            <div class=" text-center my-5 hidden" id="show-all-container">
+                <button class="btn btn-accent" onclick="">Show More</button>
             </div>
         </section>
     </main>
